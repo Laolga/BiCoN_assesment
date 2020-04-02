@@ -1,2 +1,6 @@
 results/
 nohup.out
+.idea
+.nfs*
+wrapper_*
+slurm_*

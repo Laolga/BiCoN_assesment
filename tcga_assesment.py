@@ -15,7 +15,7 @@ for expr_name in gene_expression_files:
     for sim in range(10):
         st = time.time()
         model = BiCoN(GE, G, L_g_min=10, L_g_max=25)
-        solution, scores = model.run_search(ls=True, n_proc = 10)
+        solution, scores = model.run_search(ls=True)
         end = time.time()
         patients1 = [str(labels[x]) for x in solution[1][0]]
         patients1 = '|'.join(patients1)
